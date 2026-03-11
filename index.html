@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,10 +11,16 @@
 
 <body>
   <main class="glass-card">
-    <h1>💡 Conselho do Dia</h1>
-    <p id="advice">Clique no botão abaixo para receber um conselho aleatório!</p>
-    <p id="conselho-gerado"></p>
-    <button id="conselho">Gerar Conselho</button>
+    <h1>💡 Advices day!</h1>
+    <p id="advice">Click the button below to receive a random piece of advice!</p>
+    <p id="advice-generated"></p>
+    <button id="adviceButton">Generate Advice</button>
+    <div class="advicesWrap">
+        <legend>Generate Advice by ID</legend>
+        <input type="number" id="adviceId">
+        <legend>Search by Keyword</legend>
+        <input type="text" id="adviceWord"></div>
+      </div>
   </main>
 
   <script src="script.js"></script>
