@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 /* Remove setinhas no Chrome, Safari, Edge */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -66,23 +67,39 @@ button {
 button:hover {
   background-color: #019875;
 }
+
 .advicesWrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 12px;
+  align-items: stretch;
+  gap: 16px;
   margin-top: 20px;
 }
 
-.advicesWrap legend {
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+legend {
   font-size: 0.9rem;
   color: #ddd;
   margin-bottom: 5px;
 }
 
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
 .advicesWrap input {
-  max-width: 300px;
+  max-width: 100%;
   padding: 10px;
   border-radius: 8px;
   border: none;
