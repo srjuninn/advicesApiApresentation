@@ -109,6 +109,10 @@ label {
   transition: 0.3s ease;
 }
 
+.advicesWrap input::placeholder{
+  color: rgba(255, 255, 255, 0.452);
+}
+
 #adviceId, #adviceWord {
   text-align: center;
 }
